@@ -24,7 +24,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "-2"
 type: Opaque
 data:
-  DB_ROOT_PASSWORD: dGhlcmVpc25vcGFzc3dvcmQK  # "password" in base64
+  DB_ROOT_PASSWORD: thereisnopassword  # "password" in base64
 ---
 apiVersion: apps/v1
 kind: Deployment
