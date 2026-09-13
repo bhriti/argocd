@@ -23,7 +23,6 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-2"
 type: Opaque
-type: Opaque
 data:
   DB_ROOT_PASSWORD: dGhlcmVpc25vcGFzc3dvcmQ=
 ---
