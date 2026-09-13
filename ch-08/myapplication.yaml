@@ -23,8 +23,9 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-2"
 type: Opaque
-stringData:
-  DB_ROOT_PASSWORD: thereisnopassword
+type: Opaque
+data:
+  DB_ROOT_PASSWORD: dGhlcmVpc25vcGFzc3dvcmQ=
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -45,7 +46,7 @@ spec:
     spec:
       containers:
       - name: boxone
-        image: docker.io/library/mysql:latest
+        image: docker.io/library/mysql:8.4
         env:
         # Define an environment variable named APP_DB_USER
         - name: MYSQL_ROOT_PASSWORD
